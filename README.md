@@ -50,4 +50,5 @@
 
 ## 🤝 Автор
 
-@Samjuk
+[@Samjuk](https://github.com/Samjuk89)
+
