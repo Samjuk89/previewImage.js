@@ -25,7 +25,7 @@
   $("#myUploader").previewImage({
     label: "Фото новости (872×600px)",
     buttonText: "Загрузить фото",
-    defaultImage: "/assets/img/icon_empty-img.svg",
+    defaultImage: "icon_empty-img.svg",
     maxSizeMB: 3,
     onSelect: function (file) {
       console.log("Файл загружен:", file.name);
@@ -51,3 +51,4 @@
 ## 🤝 Автор
 
 @Samjuk
+
