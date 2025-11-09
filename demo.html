@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пример previewImage.js</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="previewImage.css" />
+  </head>
+  <body>
+    <h1>previewImage.js — jQuery плагин для загрузки изображений</h1>
+
+    <div id="uploader1"></div>
+
+    <script src="previewImage.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#uploader1").previewImage({
+          label: "Фото новости (872×600px)",
+          buttonText: "Загрузить фото",
+          defaultImage: "/assets/img/icon_empty-img.svg",
+          maxSizeMB: 3,
+          onSelect: function (file) {
+            console.log("Файл загружен:", file.name);
+          },
+          onError: function (msg) {
+            alert("Ошибка: " + msg);
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
