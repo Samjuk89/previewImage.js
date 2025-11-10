@@ -1,0 +1,7 @@
+{
+  "name": "jquery-preview-image",
+  "version": "1.0.0",
+  "description": "jQuery plugin for image upload with preview",
+  "main": "previewImage.js",
+  "author": "Samjuk"
+}
